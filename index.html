@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyle Kheswa - CV</title>
+
+    <!-- Urbanist Font from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap">
+
+    <!-- Bootstrap CSS from CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- Animate.css for fade-in animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <style>
+        body {
+            font-family: 'Urbanist', sans-serif;
+            margin: 0;
+            padding: 70px 0 0; /* Added top padding to avoid overlap with navigation bar */
+            background-color: #fff; /* Set body background color to white */
+        }
+
+        header, section, footer {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff; /* Set section background color to white */
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin-top: 10px;
+            max-height: 200px; /* Set a maximum height for the profile image */
+        }
+
+        #skills,
+        #bootcamp {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #ffffff;
+            color: #000000;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin-top: 10px; /* Adjust spacing */
+        }
+
+        /* Bio Styles */
+        #bio {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center; /* Center the content */
+        }
+
+        #bio p {
+            margin: 15px 0; /* Adjust spacing */
+        }
+
+        /* Skills Styles */
+        #skills {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center; /* Center the content */
+        }
+
+        #skills h2 {
+            margin-bottom: 20px; /* Adjust spacing */
+        }
+
+        #skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #skills h3 {
+            margin-top: 10px;
+        }
+
+        /* Bootcamp Styles */
+        #bootcamp {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center; /* Center the content */
+        }
+
+        /* Contact Styles */
+        #contact {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center; /* Center the content */
+        }
+
+        #contact a {
+            color: #007bff;
+        }
+
+        /* Portfolio Styles */
+        #portfolio {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center; /* Center the content */
+        }
+
+        #image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        #image-gallery img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #video-embed {
+            margin-top: 20px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #300a0a;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (min-width: 600px) {
+            header img {
+                margin-top: 0; /* Adjust spacing */
+            }
+
+            #bio p {
+                margin: 0; /* Adjust spacing */
+            }
+
+            #skills h2 {
+                margin-bottom: 30px; /* Adjust spacing */
+            }
+
+            #portfolio {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #video-embed {
+                order: -1; /* Move video above the gallery */
+            }
+        }
+
+        /* Bootstrap classes for fade-in animations */
+        .animate__animated {
+            animation-duration: 1s;
+        }
+
+        /* Adjust the fade-in delay for each section */
+        header.animate__fadeIn { animation-delay: 0.2s; }
+        #bio.animate__fadeIn { animation-delay: 0.4s; }
+        #skills.animate__fadeIn { animation-delay: 0.6s; }
+        #bootcamp.animate__fadeIn { animation-delay: 0.8s; }
+        #contact.animate__fadeIn { animation-delay: 1s; }
+        #portfolio.animate__fadeIn { animation-delay: 1.2s; }
+    </style>
+</head>
+
+<body>
+    <!-- Bootstrap navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Kyle Kheswa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#bio">Bio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#bootcamp">Bootcamp</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="animate__animated animate__fadeIn">
+        <img src="IMG_3115.jpg" alt="Kyle Kheswa" class="profile-image">
+        <div>
+            <h1>Kyle Kheswa</h1>
+            <p>Photographer, Filmmaker, and Software Developer</p>
+        </div>
+    </header>
+
+    <section id="bio">
+        <h2>Bio</h2>
+        <p>
+            I'm Kyle Kheswa, a creative professional based in Johannesburg. I seamlessly blend the worlds
+            of photography, filmmaking, and software development. With a keen eye, I capture moments through the lens,
+            crafting visual stories that resonate with authenticity and emotion.
+        </p>
+        <p>
+            Beyond visual storytelling, I'm an inquisitive and creative problem solver, always exploring new ways to
+            integrate technology into my work. My journey includes a 6-month intensive software engineering bootcamp
+            at Hyperion Dev, which I proudly completed in January 2024.
+        </p>
+        <p>
+            My technical skills include HTML, CSS, JavaScript, Python, and SQL. I'm also proficient in Adobe Premiere
+            Pro, Adobe Photoshop, Adobe Lightroom, Adobe After Effects, and DaVinci Resolve. This diverse skill set
+            allows me not only to develop software but also to create captivating visual content with precision and
+            creativity.
+        </p>
+        <p>
+            My visual portfolio showcases my expertise in photography and filmmaking. Explore the gallery of images
+            and the embedded video to witness my passion and proficiency in capturing and presenting compelling
+            visual narratives.
+        </p>
+    </section>
+
+    <section id="skills" class="animate__animated animate__fadeIn">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Skills and Competencies</h2>
+                <div>
+                    <h3>Programming Languages:</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Adobe Software:</h3>
+                    <ul>
+                        <li>Adobe Premiere Pro</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Lightroom</li>
+                        <li>Adobe After Effects</li>
+                        <li>DaVinci Resolve</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Soft Skills:</h3>
+                    <ul>
+                        <li>Inquisitive</li>
+                        <li>Creative Problem Solver</li>
+                        <li>Self-Driven</li>
+                        <li>Attentive</li>
+                        <li>Diligent</li>
+                        <li>Personable</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Software Engineering Bootcamp</h2>
+                <p>
+                    I successfully completed a 6-month intensive software engineering bootcamp at Hyperion Dev in January
+                    2024. This comprehensive program equipped me with a solid foundation in software development, honing my
+                    skills in problem-solving, coding, and collaboration within a dynamic team environment.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="portfolio">
+        <h2>Visual Portfolio</h2>
+        <!-- image gallery and embedded video  -->
+        <div id="image-gallery">
+            <!-- gallery images -->
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+            <img src="image4.jpg" alt="Image 4">
+            <img src="image5.jpg" alt="Image 5">
+            <img src="image6.jpg" alt="Image 6">
+            <img src="image7.jpg" alt="Image 7">
+            <img src="image8.jpg" alt="Image 8">
+            <img src="image9.jpg" alt="Image 9">
+            <img src="image10.jpg" alt="Image 10">
+        </div>
+
+        <div id="video-embed">
+            <!-- Replace 'VIDEO_ID' with your actual Vimeo video ID -->
+            <iframe src="https://player.vimeo.com/video/889028953" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Details</h2>
+        <p>Phone: +27786570707</p>
+        <p>Email: <a href="mailto:kylekheswa@yahoo.co.uk">kylekheswa@yahoo.co.uk</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/kyle-kheswa-728085146/">LinkedIn Profile</a></p>
+    </section>
+
+    
+
+    <!-- Add your PDF link -->
+    <footer>
+        <h4>Kyle Kheswa ©2024</h4>
+        
+    </footer>
+
+<!-- Bootstrap JS and Popper.js from CDN -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<!-- Animate.css for fade-in animations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+</body>
+
+</html>
